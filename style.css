@@ -160,7 +160,7 @@ Version: 1.0
     padding: 35px 20.5px 16px;
     border: 1px solid #ccc;
     text-align: center;
-    width: 270px;
+    width: 240px;
     /* margin: 0 17px; */
 	cursor: pointer;
 }
@@ -177,9 +177,9 @@ Version: 1.0
     margin-bottom: 25px;
 }
 
-.vision_item {
+/* .vision_item {
     border: 1px solid #000000;
-}
+} */
 .vision_item div p {
     font-size: 16px;
     line-height: 26px;
@@ -3089,3 +3089,32 @@ text-align: center;
 .main-block .owl-controls .owl-next i {
     font-size: 35px;
 }
+
+/* TRAINER AREA */
+.trainer-area .main-title {
+    text-decoration: underline;
+    margin-bottom: 40px;
+}
+.trainer {
+    display:-webkit-box;
+    display:-webkit-flex;
+    display:-ms-flexbox;
+    display:flex;
+}
+.trainer-area .trainer-entertainment  {
+    width: 35%;
+}
+.trainer-area .trainer-entertainment .img-container {
+    width: 100%;
+}
+.trainer-area .main-text-for-trainer {
+    width: 65%;
+}
+.trainer-area .main-paragraph {
+    margin-top: 40px;
+}
+.trainer-area .entertainment .img-container img {
+    width: 100%;
+}
+/* GALLERY AREA */
+

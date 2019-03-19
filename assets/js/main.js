@@ -27,18 +27,48 @@ jQuery(document).on('ready', function ($) {
 	/*---------------------------
         vision-area 
     -----------------------------*/
-    $('.vision-area .owl-carousel').owlCarousel({
-	    items: 1,
+    // $('.vision-area .owl-carousel').owlCarousel({
+	//     items: 1,
+    //     loop: true,
+    //     margin: 30,
+    //     autoplay: false,
+    //     autoplayTimeout: 2800,
+    //     autoplayHoverPause: true,
+    //     smartSpeed: 650,
+	    
+    // });
+    
+    
+    /*---------------------------
+        vision-area 
+    -----------------------------*/
+    $('.main-block-vision').owlCarousel({
+	    items: 4,
         loop: true,
         margin: 30,
         autoplay: false,
         autoplayTimeout: 2800,
         autoplayHoverPause: true,
         smartSpeed: 650,
-	    dotsContainer: '.vision-dots'
     });
-	
-	
+    
+    //  ACTIVE CLASS TOGGLING IN MENU LIST
+   
+    const menuList = document.querySelectorAll(".dot");
+    // const menuListAsArray = Array.prototype.slice.call(menuList);
+
+    [...menuList].forEach(
+    menuListItem => {
+        menuListItem.addEventListener('click', ev => {
+            
+            const activeItem = document.querySelector(".dot.active");
+            if (activeItem) {
+                activeItem.classList.toggle('active');
+            }
+            menuListItem.classList.toggle("active");
+            });
+        }
+    );
     /*----------------------------
         MOBILE & DROPDOWN MENU
     ------------------------------*/
@@ -135,7 +165,10 @@ jQuery(document).on('ready', function ($) {
     rightImageCarousel.owlCarousel({
         items:1,
         loop:true,
-        nav:false,
+        nav:true,
+        autoplay:true,
+        autoplayTimeout: 3000,
+        navText: ['<i class="fa fa-angle-left"></i>', '<i class="fa fa-angle-right"></i>'],
     })
     
     var testmonialCarousel = $('.testmonial-slider');
