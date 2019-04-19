@@ -3004,21 +3004,26 @@ floating
 }
 .team-member .img-container {
    
-    width:calc(50% - 10px);
+    width:100%;
 }
-.team-member .img-container div {
-    width: 100%;
+.team-member .img-container .bg {
+    width: 38%;
     border-radius: 50%;
-    height: 550px;
+    height: 431px;
+    float: left;
+    margin-right: 75px;
+    margin-bottom: 50px;
 }
 .team-member  .team-member-info {
-    width:calc(50% - 10px);
+    width:100%;
 }
 .team-member .team-member-info h1 {
     text-align: center;
 }
 .team-member  .team-member-info .member-content {
     text-align: left;
+    font-size: 14px;
+    color: black;
 }
 .social_member {
     display:-webkit-box;
