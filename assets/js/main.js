@@ -27,16 +27,18 @@ jQuery(document).on('ready', function ($) {
 	/*---------------------------
         vision-area 
     -----------------------------*/
-    // $('.vision-area .owl-carousel').owlCarousel({
-	//     items: 1,
-    //     loop: true,
-    //     margin: 30,
-    //     autoplay: false,
-    //     autoplayTimeout: 2800,
-    //     autoplayHoverPause: true,
-    //     smartSpeed: 650,
-	    
-    // });
+    $('.sertificate').owlCarousel({
+	    items: 1,
+        loop: true,
+        margin: 30,
+        autoplay: false,
+        autoplayTimeout: 2800,
+        autoplayHoverPause: true,
+        smartSpeed: 650,
+        nav:true,
+	    navText: ['<svg width="100%" height="100%" viewBox="0 0 11 20"><path style="fill:none;stroke-width: 1px;stroke: #000;" d="M9.554,1.001l-8.607,8.607l8.607,8.606"/></svg>',
+                  '<svg width="100%" height="100%" viewBox="0 0 11 20" version="1.1"><path style="fill:none;stroke-width: 1px;stroke: #000;" d="M1.054,18.214l8.606,-8.606l-8.606,-8.607"/></svg>'],
+    });
     
     
     /*---------------------------
@@ -50,6 +52,10 @@ jQuery(document).on('ready', function ($) {
         autoplayTimeout: 2800,
         autoplayHoverPause: true,
         smartSpeed: 650,
+        nav:true,
+	    navText: ['<svg width="100%" height="100%" viewBox="0 0 11 20"><path style="fill:none;stroke-width: 1px;stroke: #000;" d="M9.554,1.001l-8.607,8.607l8.607,8.606"/></svg>',
+                  '<svg width="100%" height="100%" viewBox="0 0 11 20" version="1.1"><path style="fill:none;stroke-width: 1px;stroke: #000;" d="M1.054,18.214l8.606,-8.606l-8.606,-8.607"/></svg>'],
+
     });
     
     //  ACTIVE CLASS TOGGLING IN MENU LIST
@@ -280,7 +286,7 @@ jQuery(document).on('ready', function ($) {
             loop: true,
             nav: false,
             center: false,
-            dots: false,
+            dots: true,
             navText: ['<i class="fa fa-angle-left"></i>', '<i class="fa fa-angle-right"></i>'],
             autoplay: true,
             autoplayTimeout: 3000,
@@ -334,7 +340,7 @@ jQuery(document).on('ready', function ($) {
             loop: true,
             nav: false,
             center: false,
-            dots: false,
+            dots: true,
             navText: ['<i class="fa fa-angle-left"></i>', '<i class="fa fa-angle-right"></i>'],
             autoplay: false,
             autoplayTimeout: 3000,
@@ -364,7 +370,7 @@ jQuery(document).on('ready', function ($) {
     if (testmonialBxSlider.length > 0) {
         testmonialBxSlider.bxSlider({
             // adaptiveHeight: true,
-            auto: true,
+            auto: false,
             controls: true,
             nextText: '<i class="fa fa-long-arrow-right"></i>',
             prevText: '<i class="fa fa-long-arrow-left"></i>',
@@ -420,7 +426,10 @@ jQuery(document).on('ready', function ($) {
 			  $('.field:nth-child(2) input + label + span').css({'opacity': 0});
 			}
 		});
-	});
+    });
+    
+
+    
     /*--------------------------
         ACTIVE WOW JS
     ----------------------------*/
