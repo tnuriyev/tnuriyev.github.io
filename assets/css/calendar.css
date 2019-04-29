@@ -48,7 +48,6 @@ form {
 }
 .list-graduates {
     padding-inline-start: 0px;
-    margin-top: 40px;
 }
 .list-graduates > li {
     padding: 10px;
@@ -62,10 +61,10 @@ form {
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
+    /* -webkit-box-pack: justify;
     -webkit-justify-content: space-between;
         -ms-flex-pack: justify;
-            justify-content: space-between;
+            justify-content: space-between; */
             margin-bottom: 20px;
 }
 @media (max-width:992px){
@@ -83,11 +82,36 @@ form {
         max-width: 100% !important; 
     }
 }
+.list-graduates > li >  span {
+    margin-left: 45px;
+}
+.list-graduates > li > span:nth-child(1){
+    min-width: 80px;
+}
+.list-graduates > li > span:nth-child(2){
+    min-width: 100px;
+}
+.list-graduates > li > span:nth-child(3){
+    min-width: 410px;
+    max-width: 410px;
+    text-align: justify;
+}
+.list-graduates > li > a {
+    margin-left: 50px;
+} 
+.list-graduates > li > a:last-child {
+    margin-left: 40px;
+}
+.list-graduates > li > span:first-child {
+    margin-left: 0px;
+}
 .list-graduates > li > span:nth-child(2){
     max-width: 28%;
 }
 .list-graduates > li > .inactive > button{
     cursor: not-allowed;
+    background-image: none;
+    background-color: #313A3D;
 }
 .list-graduates > li > a > button {
     background-color: #fdc830;
@@ -125,5 +149,11 @@ input[type="text"] {
     margin-bottom: 0px;
 }
 .names li {
-    margin-left: 20px;
+    margin-left: 90px;
+}
+.names li:last-child {
+    margin-left: 105px;
+}
+.names li:first-child {
+    margin-left: 0px;
 }
