@@ -88,6 +88,8 @@ form {
 }
 .list-graduates > li > .inactive > button{
     cursor: not-allowed;
+    background-image: none;
+    background-color: #313A3D;
 }
 .list-graduates > li > a > button {
     background-color: #fdc830;

@@ -84,6 +84,8 @@ form {
 }
 .list-graduates > li >  span {
     margin-left: 45px;
+    position: relative;
+    z-index: 9;
 }
 .list-graduates > li > span:nth-child(1){
     min-width: 80px;
@@ -96,10 +98,24 @@ form {
     max-width: 410px;
     text-align: justify;
 }
-.list-graduates > li > a {
+.month {
+    color: #fff;
+}
+.month:before {
+    position: absolute;
+    content: "";
+    background-image: url(../img/month_arrow.png);
+    width: 125px;
+    background-position: 43px;
+    height: 25px;
+    left: -59px;
+    background-repeat: no-repeat;
+    z-index: -1;
+}
+.list-graduates > li > .anchors > a {
     margin-left: 50px;
 } 
-.list-graduates > li > a:last-child {
+.list-graduates > li > .anchors > a:last-child {
     margin-left: 40px;
 }
 .list-graduates > li > span:first-child {
@@ -108,12 +124,12 @@ form {
 .list-graduates > li > span:nth-child(2){
     max-width: 28%;
 }
-.list-graduates > li > .inactive > button{
+.list-graduates > li > .anchors > .inactive > button{
     cursor: not-allowed;
     background-image: none;
     background-color: #313A3D;
 }
-.list-graduates > li > a > button {
+.list-graduates > li > .anchors > a > button {
     background-color: #fdc830;
     background-image: -webkit-gradient(linear, left top, right top, from(#fdc830), to(#f37335));
     background-image: -webkit-linear-gradient(left, #fdc830, #f37335);
@@ -156,4 +172,45 @@ input[type="text"] {
 }
 .names li:first-child {
     margin-left: 0px;
+}
+@media (max-width:992px){
+    .list-graduates > li > span:nth-child(3) {
+        width: 100%;
+        max-width: unset !important;
+        text-align: center !important;
+    }
+    .list-graduates > li > span {
+        margin-left: 0px;
+    }
+    .list-graduates > li > span:nth-child(1) {
+        min-width: 70px;
+        width: 100%;
+    }
+}
+@media (max-width:1200px){
+    .list-graduates > li > span:nth-child(1){
+        min-width: 70px;
+    }
+    .list-graduates > li > span:nth-child(2){
+        min-width: 60px;
+    }
+    .list-graduates > li > a > button {
+        padding: 5px 20px;
+    }
+    .list-graduates > li > span:nth-child(3){
+        min-width: 250px;
+        max-width: 250px;
+        text-align: justify;
+    }
+    .list-graduates > li > a {
+        margin-left: 50px;
+    } 
+    .names li {
+        margin-left: 80px;
+    }
+}
+@media (max-width:992px){
+    .names {
+        display:none;
+    }
 }

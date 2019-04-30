@@ -851,7 +851,7 @@ label.mt10.valid {
 ----------------------------------*/
 
 .scrolltotop {
-    background: #404873 none repeat scroll 0 0;
+    background: #fdc830 none repeat scroll 0 0;
     bottom: 20px;
     color: #ffffff;
     display: none;
@@ -866,7 +866,7 @@ label.mt10.valid {
 }
 
 .scrolltotop:hover {
-    background: #FF7467;
+    background: #fdc830;
     color: #ffffff;
 }
 
@@ -1290,7 +1290,7 @@ div.mfp-content {
 .home-two a:hover,
 .home-two ul#nav li a:hover,
 .home-two ul#nav li.active a {
-    color: #4694f9;
+    color: #fff;
 }
 
 .home-two .login-register ul li a {
@@ -1353,6 +1353,7 @@ div.mfp-content {
 }
 .author-content a {
     position: relative;
+    color: #000000;
 }
 .single-testimonials .author-image {
     margin-bottom: 30px;
@@ -1945,7 +1946,7 @@ margin-bottom: 15px;
 
 @media (max-width: 1366px) {
     .padding-top {
-        padding-top: 20px;
+        padding-top: 80px;
     }
 }
 
@@ -2615,7 +2616,7 @@ a {
 }
 
 .team_common .member_info span {
-    color: #363636;
+    color: #000000;
     font-size: 13px;
 }
 
@@ -3128,13 +3129,37 @@ text-align: center;
 
 .icon-bar {
     position: fixed;
-    top: 50%;
+    top: 35%;
     -webkit-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
     z-index: 5;
     left: 0;
 }
+.calendar {
+    position: fixed;
+    top: 70%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    z-index: 5;
+    left: 0;
+    width: 85px;
+}
+.calendar > a > img {
+    animation: rotate 2s infinite;
+    -webkit-animation: rotate 2s infinite;
+}
+
+@keyframes rotate {
+  0% { transform: rotateY(360deg); }
+  17% { transform: rotateY(0deg); }
+}
+
+@-webkit-keyframes rotate {
+  0% { transform: rotateY(360deg); }
+  17% { transform: rotateY(0deg); }
+} 
 @media (max-width:992px){
     .icon-bar {
         display: none;
