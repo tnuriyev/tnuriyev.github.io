@@ -1290,7 +1290,7 @@ div.mfp-content {
 .home-two a:hover,
 .home-two ul#nav li a:hover,
 .home-two ul#nav li.active a {
-    color: #fff;
+    color: #000;
 }
 
 .home-two .login-register ul li a {
@@ -2968,7 +2968,7 @@ floating
     top: -15px;
     border-bottom-left-radius: 249px;
     border-top-left-radius: 0px;
-    /* overflow: hidden; */  /*bunu ac task yerine yetirildi */
+    overflow: hidden;  /*bunu ac task yerine yetirildi */
 }
 .read-more-btn {
     text-align: center;
@@ -3224,6 +3224,11 @@ text-align: center;
 svg {
     fill: #000;
     height: 35px;
+}
+#Layer_1 {
+    fill: #000;
+    height: 100%;
+    width: 100%;
 }
 .owl-dots {
     display: -webkit-box;
